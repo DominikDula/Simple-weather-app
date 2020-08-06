@@ -1,0 +1,225 @@
+
+//reset///
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    background:linear-gradient(#3758FF,#48BCF4);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  .city{
+      color: white;
+      padding: 3em;
+
+      p{
+          color: rgb(212, 202, 202);
+      }
+
+  }
+
+  .icon{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .weather-icon img{
+          width:200px;
+          height: 200px;
+
+      }
+      .temperature{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: 2em;
+          font-weight: bold;
+          margin-right: 40px;
+      }
+  }
+
+  .description{
+      display: flex;
+      justify-content: center;
+      p{
+        color: rgb(212, 202, 202);
+        font-size: 1.5em;
+      }
+  }
+
+  .daily{
+
+      margin: 5em auto;
+      margin-top: 330px;
+      width: 90%;
+      height: 600px;
+      background: linear-gradient(#4FC2F7,#4FC3F7);
+      border-radius: 20px;
+      color: white;
+      
+
+      h2{
+          padding: 1.5em;
+          font-weight: 500;
+      }
+  }
+  .days{
+      .day{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      p{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 33%;
+          font-size: 85%;
+      }
+      span{
+        width: 33%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 85%;
+      }
+  }
+
+  .hourly{
+      position: relative;
+      color: white;
+
+      h2{
+        padding: 1.5em;
+        font-weight: 500;
+    }
+  }
+.hours{
+    margin: 0px 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, 50%);
+    transition: 0.5s ease;
+
+}
+
+.hour{
+    width: 115px;
+    height: 170px;
+    margin: 0 4px;
+    background: linear-gradient(#4FC2F7,#4FC3F7);
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+  }
+  
+
+  .arrows{
+      display: flex;
+      justify-content: space-around;
+      i{
+          cursor: pointer;
+      }
+
+}
+
+footer{
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#2ea6dd,#2cafec);
+    a{
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+}
+
+.error{
+    display: none;
+}
+
+@media (min-width: 630px) {
+
+    .icon .weather-icon img{
+            width:260px;
+            height: 260px;
+        }
+
+    
+
+    
+    .hours{
+        transform: translate(-34%, 50%);
+  
+        
+    }
+
+    .days {
+        p{
+            font-size: 100%;
+        }
+        span{
+            justify-content: space-evenly;
+            font-size: 100%;
+        }
+    }    
+
+}    
+
+
+ 
+
+ @media (min-width: 920px) {
+    .hours{
+        transform: translate(-50%, 50%);
+        margin: 0;
+        
+    
+    }
+
+    .arrows{
+        display: none;
+     
+  
+  }
+
+ }
