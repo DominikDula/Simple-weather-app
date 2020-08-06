@@ -205,7 +205,10 @@ window.addEventListener("load",() =>{
         let b= [];
                 for(let i=0;i<19;i++){
                     if(i% 3 == 0){
-                        b.push(     `<p class="time">${dailyWeather[`${i.toString()} hourly time`]}</p><img src="icons/${dailyWeather[`${i.toString()} hourly icon`]}.svg" alt="icon"><span>${dailyWeather[`${i.toString()} hourly description`]}</span><span>${dailyWeather[`${i.toString()} hourly`]}°</span>`); 
+                        b.push( `<p class="time">${dailyWeather[`${i.toString()} hourly time`]}</p>
+                        <img src="icons/${dailyWeather[`${i.toString()} hourly icon`]}.svg" alt="icon">
+                        <span>${dailyWeather[`${i.toString()} hourly description`]}</span>
+                        <span>${dailyWeather[`${i.toString()} hourly`]}°</span>`); 
                     }
                 }
          
