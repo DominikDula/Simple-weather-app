@@ -2,7 +2,7 @@
 
 ### Live Demo: 
 
-https://simple-weather-app-git-master.dominikdula.vercel.app/
+https://simple-weather-app-eotjmuhh4.vercel.app/
 
 
 ![Design preview ](./img/weather1.jpg)
